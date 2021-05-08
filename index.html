@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="dist/theme/black.css" id="theme"> -->
+
+    <link rel="stylesheet" href="css/main.css" id="theme" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Capa -->
+        <section>
+          <header>
+            <h1>100 formas de contar de 1 a 100 utilizando programação</h1>
+            <h2>Referências, processos e aprendizados em andamento</h2>
+          </header>
+          <div class="capa-formas"></div>
+        </section>
+        <section>Slide 2</section>
+        <section>Slide 2</section>
+        <section>Slide 2</section>
+        <section>Slide 2</section>
+        <section>Slide 2</section>
+        <section>Slide 2</section>
+        <section>Slide 2</section>
+        <section>Slide 2</section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+				transition: 'fade',
+				slideNumber: true,
+				disableLayout: true,
+      });
+    </script>
+		<script>
+    	function cor_fundo() {
+				let cores = [
+					'Aquamarine',
+					'Coral',
+					'Chocolate',
+					'DarkKhaki',
+					'DarkSeaGreen',
+					'DarkSalmon',
+					'DarkOrange',
+					'DarkTurquoise',
+					'Gold',
+					'IndianRed',
+					'LightCoral',
+					'LightPink',
+					'LightSalmon',
+					'MediumTurquoise',
+					'Peru',
+					'Salmon',
+					'SandyBrown',
+					'Tan',
+					'Tomato',
+					];
+				
+				return cores[Math.floor(Math.random() * cores.length)];
+			};
+
+			let slides_lista = document.getElementsByClassName("slide-background");
+			
+			slides_lista.forEach(slide => {
+				slide.style.setProperty('background-color', cor_fundo());
+				
+			});
+			
+			
+
+			</script>
+  </body>
+</html>
