@@ -24,14 +24,55 @@
     <div class="reveal">
       <div class="slides">
         <!-- Capa -->
+        
         <section>
-          <header>
-            <h1>100 formas de contar de 1 a 100 utilizando programação</h1>
-            <h2>Referências, processos e aprendizados em andamento</h2>
-          </header>
-          <div class="capa-formas"></div>
+          <div class="capa">
+            <header class="colunas colunas-2">
+              <h1>100 formas de contar de 1 a 100 utilizando programação</h1>
+              <h2>Referências, processos e aprendizados em andamento</h2>
+            </header>
+            <div class="capa-formas">
+              <img src="assets/capa.png" alt="">
+            </div>
+          </div>
         </section>
-        <section>Slide 2</section>
+
+        <!-- Olá -->
+        <section>
+          <div class="colunas colunas-2">
+            <div>
+              <h1>Olá!</h1>
+              <p>Meu nome é Guilherme Vieira,</p>
+              <p>Nasci e cresci na zona leste São Paulo</p>
+              <p>Sou sócio e designer no estúdio <a href="https://www.estudiodao.com">Daó</a>.</p>
+              <p>Artista gráfico na Norte.</p>
+              <p>E um entusiasta da programação criativa.</p>
+            </div>
+            <div>
+              <img src="assets/retrato.png" alt="">
+            </div>
+          </div>
+          
+
+        </section>
+
+        <!-- Referências -->
+        <section>
+          <section>
+            <h1 class="titulo">
+              Referências
+            </h1>
+          </section>
+          <section class="centralizado">
+            Referência 1 
+          </section>
+          <section class="centralizado">
+            Referência 2 
+          </section>
+          <section class="centralizado">
+            Referência 3 
+          </section>
+        </section>
         <section>Slide 2</section>
         <section>Slide 2</section>
         <section>Slide 2</section>
@@ -50,8 +91,9 @@
       Reveal.initialize({
         hash: true,
 				transition: 'fade',
-				slideNumber: true,
-				disableLayout: true,
+				slideNumber: false,
+        width: 1280,
+  			height: 720,
       });
     </script>
 		<script>
@@ -81,9 +123,9 @@
 				return cores[Math.floor(Math.random() * cores.length)];
 			};
 
-			let slides_lista = document.getElementsByClassName("slide-background");
+			let slides_lista_fundos = document.getElementsByClassName("slide-background");
 			
-			slides_lista.forEach(slide => {
+			slides_lista_fundos.forEach(slide => {
 				slide.style.setProperty('background-color', cor_fundo());
 				
 			});
