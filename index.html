@@ -23,13 +23,13 @@
   <body>
     <div class="reveal">
       <div class="slides">
+
         <!-- Capa -->
-        
         <section>
           <div class="capa">
             <header class="colunas colunas-2">
               <h1>100 formas de contar de 1 a 100 utilizando programação</h1>
-              <h2>Referências, processos e aprendizados em andamento</h2>
+              <p>Referências, processos e aprendizados em andamento</p>
             </header>
             <div class="capa-formas">
               <img src="assets/capa.png" alt="">
@@ -42,44 +42,131 @@
           <div class="colunas colunas-2">
             <div>
               <h1>Olá!</h1>
-              <p>Meu nome é Guilherme Vieira,</p>
-              <p>Nasci e cresci na zona leste São Paulo</p>
-              <p class="fragment">Sou sócio e designer no estúdio <a href="https://www.estudiodao.com">Daó</a>.</p>
-              <p class="fragment">Artista gráfico na Norte.</p>
-              <p class="fragment">E um entusiasta da programação criativa.</p>
+              <p>Meu nome é Guilherme Vieira,
+              <span>nasci e cresci na zona leste São Paulo</span>
+              <span class="fragment">sou sócio e designer no estúdio <a href="https://www.estudiodao.com">Daó</a>,</span>
+              <span class="fragment">artista gráfico na <a href="https://norte.in">Norte</a></span>
+              <span class="fragment">e um entusiasta da programação criativa.</span></p>
             </div>
             <div>
               <img src="assets/retrato.png" alt="">
-            </div>
+            </div> 
           </div>
           
 
         </section>
 
+        <!-- Resumo -->
+        <section>
+          <h1>Referências</h1>
+          <h1>Origem</h1>
+          <h1>Produção</h1>
+          <h1>Aprendizados</h1>
+        </section>
+
         <!-- Referências -->
         <section>
           <section>
-            <h1 class="titulo">
+            <h1>
               Referências
             </h1>
           </section>
+
+          <!-- Referências - Wall Drawings - Sol Lewitt -->
           <section class="centralizado">
-            Referência 1 
+            <div class="colunas colunas-1-3">
+              <div>
+                <h1>Wall Drawings: <br>Sol Lewitt</h1>
+                <p>Potencialidade da ideia de estruturar instruções.</p>
+              </div>
+              <div>
+                <a href="https://artluv.net/sol-le-witt-wall-drawing-decimo-aniversario-no-mass-moca/">
+                  <img src="assets/SolLewitt.jpg" alt="">
+                </a>
+              </div>
+            </div>
           </section>
+
+          <!-- Referências - Creating Interactive Type - Stefanie Schwarz -->
           <section class="centralizado">
-            Referência 2 
+            <div class="colunas colunas-1-3">
+              <div>
+                <h1>Creating Interactive Type: <br>Stefanie Schwarz</h1>
+                <p>Junção de programação e publicação independente.</p>
+              </div>
+              <div>
+                <a href="https://issuu.com/stefanieschwarz">
+                  <img src="assets/StefanieSchwarz.jpg" alt="">
+                </a>
+              </div>
+            </div>
           </section>
+
+          <!-- Referências - Sketch-a-Day - Alexandre Villares -->
           <section class="centralizado">
-            Referência 3 
+            <div class="colunas colunas-1-3">
+              <div>
+                <h1>Sketch-a-Day: <br>Alexandre Villares</h1>
+                <p>Programar como prática.</p>
+              </div>
+              <div>
+                <a href="https://github.com/villares/sketch-a-day">
+                  <img src="assets/AlexandreVillares.jpg" alt="">
+                </a>
+              </div>
+            </div>
           </section>
+
+          <!-- Referências - Código em Fluxo - Barbara Castro -->
+          <section class="centralizado">
+            <div class="colunas colunas-1-3">
+              <div>
+                <h1>Código em Fluxo: <br>Barbara Castro</h1>
+                <p>Programar além da produtividade.</p>
+              </div>
+              <div>
+                <a href="https://www.youtube.com/watch?v=T75KbmDNNxo">
+                  <img src="assets/BarbaraCastro.jpg" alt="">
+                </a>
+              </div>
+            </div>
+          </section>
+
         </section>
-        <section>Slide 2</section>
-        <section>Slide 2</section>
-        <section>Slide 2</section>
-        <section>Slide 2</section>
-        <section>Slide 2</section>
-        <section>Slide 2</section>
-        <section>Slide 2</section>
+
+        <!-- 1-10 -->
+        <section>
+          
+          <section>
+            <h1>1 — 10</h1>
+          </section>
+          
+          <section>
+            <div class="colunas colunas-2">
+              <div>
+                <h1>Definir limites para avançar.</h1>
+              </div>
+              <div class="fragment">
+                <h2>Ideia:</h2>
+                <ul>
+                  <li>Criar uma publicação impressa usando programação</li>
+                </ul>
+                <h2>Conteúdo:</h2>
+                <ul>
+                  <li>Utilizar a própria prática de programação como conteúdo</li>
+                  <li>Uma pergunta simples mas com muitas respostas</li>
+                </ul>
+                <h2>Especificações:</h2>
+                <ul>
+                  <li>Ser fácil de imprimir (Tamanho de papel padrão, encadernação simples e uma cor)</li>
+                  <li>Fácil reprodução: qualquer um com o link poderia imprimir sua publicação.</li>
+                </ul>
+              </div>
+            </div> 
+          </section>
+
+        </section>
+        
       </div>
     </div>
 
@@ -91,8 +178,9 @@
       Reveal.initialize({
         hash: true,
         controls: false,
+        center: false,
 				transition: 'fade',
-				slideNumber: "h.v/t",
+				slideNumber: "c/t",
         width: 1920,
   			height: 1080,
       });
