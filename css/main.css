@@ -33,7 +33,7 @@ body {
   font-family: var(--fonte-secundaria);
   font-size: 100%;
   color: var(--cor-principal);
-  background-color: var(--cor-secundaria);
+  background-color: white;
   line-height: 1.2em;
 }
 
@@ -69,7 +69,11 @@ a {
 }
 
 ul {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+}
+
+ul li {
+  margin-bottom: 1rem;
 }
 
 /* Reveal
@@ -99,7 +103,7 @@ ul {
 
 .reveal .slides {
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .reveal .slides section,
@@ -174,12 +178,9 @@ ul {
 /* Leiautes
 ---------------------------------------*/
 
-
-
-
 .colunas {
   display: grid;
-  gap: 2rem;
+  gap: 8rem;
 }
 
 .colunas-2 {
