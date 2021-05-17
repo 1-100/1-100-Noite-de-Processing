@@ -13,7 +13,7 @@
 
 :root {
   --cor-principal: #000;
-  --cor-secundaria: Aquamarine;
+  --cor-secundaria: white;
   --fonte-principal: "Necto-Mono", sans-serif;
   --fonte-secundaria: "Noto Serif", serif;
   --fonte-grande: 1.5rem;
@@ -189,4 +189,35 @@ ul li {
 
 .colunas-1-3 {
   grid-template-columns: 1fr 3fr;
+}
+
+.lista-participantes li {
+  display: inline;
+}
+
+.botao {
+  font-family: var(--fonte-principal);
+  font-size: 2rem;
+  border: 1px solid var(--cor-principal);
+  border-radius: 2rem;
+  background-color: transparent;
+  padding: 0.15rem 0.9rem 0.2rem 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color .2s ease-in-out;
+  display: inline-block;
+  line-height: 1em;
+  text-align: center;
+}
+
+.botao:hover,
+.botao:focus,
+.botao.ativo {
+  background-color: var(--cor-principal);
+  color: var(--cor-secundaria);
+  cursor: pointer;
+}
+
+.lista-participantes .botao {
+  margin-bottom: 1rem;
 }
