@@ -221,3 +221,7 @@ ul li {
 .lista-participantes .botao {
   margin-bottom: 1rem;
 }
+
+.centralizado {
+  text-align: center;
+}
