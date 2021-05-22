@@ -13,7 +13,7 @@
 
 :root {
   --cor-principal: #000;
-  --cor-secundaria: white;
+  --cor-secundaria: aquamarine;
   --fonte-principal: "Necto-Mono", sans-serif;
   --fonte-secundaria: "Noto Serif", serif;
   --fonte-grande: 1.5rem;
@@ -70,6 +70,7 @@ a {
 
 ul {
   margin-bottom: 4rem;
+  margin-left: 2rem;
 }
 
 ul li {
@@ -111,18 +112,23 @@ ul li {
 .reveal .slides section > section {
   line-height: 1.2em;
   font-weight: inherit;
-  padding: 1rem;
   height: calc(100% - 1rem);
 }
 
+.reveal .slides section {
+  padding: 3rem 0 3rem 0;
+}
+
 .reveal .slides section > section {
-  padding: 1rem 0;
+  padding: 3rem 0;
 }
 
 .reveal .progress {
-  height: 2rem;
+  height: 1rem;
   border-top: 1px solid var(--cor-principal);
   background-color: transparent;
+  bottom: auto;
+  top: 0;
 }
 
 .reveal .progress span {
@@ -130,33 +136,94 @@ ul li {
 }
 
 .reveal .slide-number {
-  right: 0;
-  bottom: 0;
-  font-family: var(--fonte-principal);
-  font-size: 1rem;
-  
-}
-
-.reveal .slide-number {
+  right: 3rem;
+  bottom: 1rem;
   padding: 0;
   background-color: transparent;
-  font-size: 2rem;
 }
 
-.reveal .slide-number a {
+.reveal .slide-number-a {
   text-decoration: none;
   color: var(--cor-principal);
+  font-family: var(--fonte-principal);
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 
+/* Menu
+---------------------------------------*/
+
+.reveal div.slide-menu-button {
+  font-family: var(--fonte-principal);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  left: 3rem;
+  bottom: 1rem;
+}
+
+div.slide-menu-wrapper .slide-menu {
+  background-color: #000;
+  font-family: var(--fonte-principal);
+}
+
+#close {
+  font-family: var(--fonte-principal);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: var(--cor-secundaria);
+}
+
+div.slide-menu-wrapper .slide-menu-toolbar {
+  border-bottom: none;
+}
+
+div.slide-menu-wrapper .slide-menu-toolbar > li:first-child {
+  display: none;
+}
+
+div.slide-menu-wrapper .slide-menu-item {
+  border: none;
+  text-transform: uppercase;
+  font-family: var(--fonte-principal);
+  color: var(--cor-secundaria);
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.2em;
+}
+
+div.slide-menu-wrapper .slide-menu-item-vertical {
+  padding: 0 0 0 4rem;
+  margin-bottom: 1rem;
+  color: var(--cor-secundaria);
+}
+
+div.slide-menu-wrapper .active-menu-panel li.active {
+  color: var(--cor-secundaria);
+  text-decoration: underline;
+}
+
+div.slide-menu-wrapper .active-menu-panel li.active::before {
+  content: "> ";
+}
+
+div.slide-menu-wrapper .slide-menu-item.past, 
+div.slide-menu-wrapper .slide-menu-item-vertical.past {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+div.slide-menu-wrapper .active-menu-panel li.selected {
+  background-color: transparent;
+  color: var(--cor-secundaria);
+  text-decoration: underline;
+}
 
 /* Capa
 ---------------------------------------*/
-
-/* .capa-formas video {
-  max-width: 100%;
-  mix-blend-mode: multiply;
-} */
 
 .capa h1 {
   font-size: 2rem;
@@ -167,7 +234,6 @@ ul li {
 }
 
 .capa-formas {
-  
   background-image: url('../assets/capa.png');
   background-position: top center;
   background-size: contain;
