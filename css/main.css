@@ -238,7 +238,7 @@ div.slide-menu-wrapper .active-menu-panel li.selected {
   background-position: top center;
   background-size: contain;
   background-repeat: repeat-x;
-  height: calc(100vh - 10rem);
+  height: calc(100vh - 13rem);
   margin-left: -10vw;
   margin-right: -10vw;
 }
@@ -278,6 +278,10 @@ div.slide-menu-wrapper .active-menu-panel li.selected {
 
 .imagem-cheia img {
   display: none;
+}
+
+.lista-participantes {
+  margin-left: 0;
 }
 
 
